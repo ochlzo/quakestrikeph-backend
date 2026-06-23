@@ -1,0 +1,33 @@
+# --- Python environment ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Environment secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Datasets and large catalog files ---
+*.csv
+*.csv.tmp
+*.tmp
+
+# --- Model outputs / check-points ---
+# Exclude model binaries and trained checkpoints to keep repo small
+seis_model_suite/src/outputs/
+
+# --- OS / IDE temporary files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.project
+.settings/
+*.log
+celerybeat-schedule

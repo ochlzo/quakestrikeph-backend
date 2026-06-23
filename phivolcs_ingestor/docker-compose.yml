@@ -1,0 +1,14 @@
+services:
+  ingestor:
+    build: .
+    image: quakestrikeph-phivolcs-ingestor
+    container_name: phivolcs-ingestor
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    # Broker (Upstash Redis) and database (Supabase) are both external, so no
+    # other services are needed. Add a `redis` service here if you switch to a
+    # bundled broker (see README).
+

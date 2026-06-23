@@ -1,0 +1,9 @@
+celery==5.4.0
+redis==5.0.8
+psycopg2-binary==2.9.9
+requests==2.32.3
+certifi==2024.8.30
+beautifulsoup4==4.12.3
+python-dotenv==1.0.1
+pandas==2.2.2
+
